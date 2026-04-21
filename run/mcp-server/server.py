@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# [START cloudrun_mcpserver_otel]
+from otel_setup import setup_opentelemetry
+setup_opentelemetry("mcp-server")
+
 # [START cloudrun_mcpserver]
 import asyncio
 import logging
@@ -64,3 +68,4 @@ if __name__ == "__main__":
     )
 
 # [END cloudrun_mcpserver]
+# [END cloudrun_mcpserver_otel]
