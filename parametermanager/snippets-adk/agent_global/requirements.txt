@@ -1,0 +1,1 @@
+google-adk[extensions]>=1.30
