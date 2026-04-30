@@ -20,6 +20,12 @@ from google.cloud import parametermanager_v1
 
 
 # [START parametermanager_get_param_version]
+
+# The GetParameterVersion operation retrieves parameter metadata and doesn't
+# support high-volume access. To access parameter values at scale,
+# see Access a parameter version (https://docs.cloud.google.com/secret-manager/parameter-manager/docs/render-parameter-version).
+
+
 def get_param_version(
     project_id: str, parameter_id: str, version_id: str
 ) -> parametermanager_v1.ParameterVersion:
